@@ -1,23 +1,26 @@
+* {
+    /*background-color: #e6af4b;*/
+}
 .container {
-    margin: 100px 0 0 50px;
+    margin: 100px auto;
 }
 .view {
     width: 300px;
     height: 200px;
-    border: 10px solid #fff;
+    /*border: 10px solid #fff;*/
     overflow: hidden;
     /*position: relative;*/
     text-align: center;
     cursor: default;
-    background: #fff url(../images/bgimg.jpg) no-repeat center center
+    /*background: #fff url(../images/bgimg.jpg) no-repeat center center*/
 }
 .view .mask, .view .content {
-    width: 320px;
+    width: 300px;
     height: 200px;
     position: absolute;
     overflow: hidden;
     top: 0;
-    left: 0
+    left: 0;
 }
 .view h2 {
     text-transform: uppercase;
@@ -35,7 +38,7 @@
     font-size: 12px;
     position: relative;
     color: #fff;
-    /*padding: 10px 20px 20px;*/
+    padding: 10px 20px 20px;
     text-align: center
 }
 .view a.info {
@@ -94,8 +97,10 @@
     transition-delay: 0.5s;
 }
 #food {
-    width: 800px;
+    width: 870px;
     height: 400px;
+    margin: 0 -15px 0 -15px;
 }
-
- 
+.photo {
+    margin: 0 0 0 -15px;
+ }
