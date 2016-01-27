@@ -50,3 +50,5 @@ group :development do
   gem 'tzinfo-data'
 end
 
+gem 'tzinfo-data'
+
