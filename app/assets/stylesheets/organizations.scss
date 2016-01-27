@@ -1,0 +1,70 @@
+// Place all the styles related to the Organizations controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+*{
+	margin: 0px 0px;
+}
+.base{
+	padding: 0px;
+	background-color: #0F5257;
+}
+.container{
+	margin: 0px;
+	max-width: none;
+	width: 100%;
+}
+.row{
+	max-width: none;
+}
+#video_div{
+	margin-left: -11px;
+	margin-top: -460px;
+	width: 100%;
+	overflow: hidden;
+}
+#video{
+	width: 100%;
+	opacity: 0.4;
+}
+.left-img{
+	margin: -7px;
+}
+#logo{
+	margin-top: 30px;
+	margin-left: 5px;
+}
+#about{
+	float: right;
+	height: 400px;
+	padding-top: 30px;
+	margin-top: 60px;
+	background-color: #ccc5b9;
+
+	h3{
+		font-style: italic;
+	}
+	p{
+		margin-top: 60px;
+		font-size: 18px;
+	}
+}
+#quote{
+	margin-top: 25px;
+	font-size: 22px;
+	font-style: italic;
+	font-weight: lighter;
+	color: #FA7921;
+}
+#quote_by{
+	font-style: italic;
+	font-weight: lighter;
+	color: #FA7921;
+}
+#link{
+	font-size: 18px;
+	margin-top: 110px;
+	img{
+		margin: -15px 5px;
+	}
+}
+
