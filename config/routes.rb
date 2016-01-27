@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   get 'homepages/index' => 'homepages#index'
 
   get 'tests' => "tests#index"
-  root 'users#index'
+  root 'landing#index'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
