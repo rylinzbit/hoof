@@ -1,9 +1,7 @@
 Rails.application.routes.draw do
-  get 'homepages/index' => 'homepages#index'
-
-  get 'tests' => "tests#index"
   root 'landing#index'
-
+  get 'homepages/index' => 'homepages#index'
+  get 'organizations/earthjustice' => 'organizations#earth_justice'
   get 'users/new' => 'users#new'
 
   # The priority is based upon order of creation: first created -> highest priority.
