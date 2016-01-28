@@ -11,8 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20160127232520) do
 
+=======
+
+ActiveRecord::Schema.define(version: 20160127232520) do
+
+  create_table "videos", force: :cascade do |t|
+    t.string   "title"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+
+ActiveRecord::Schema.define(version: 20160127193719) do
+
+>>>>>>> fefa9ecab76b3bfed5b185ad1cc171edc89f78a5
   create_table "users", force: :cascade do |t|
     t.string   "f_name"
     t.string   "l_name"
@@ -27,12 +40,16 @@ ActiveRecord::Schema.define(version: 20160127232520) do
     t.integer  "avail_video"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
+<<<<<<< HEAD
   end
 
   create_table "videos", force: :cascade do |t|
     t.string   "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+=======
+
+>>>>>>> fefa9ecab76b3bfed5b185ad1cc171edc89f78a5
   end
 
 end

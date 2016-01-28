@@ -1,9 +1,8 @@
 Rails.application.routes.draw do
+  root 'landing#index'
   get 'homepages/index' => 'homepages#index'
-
-  get 'tests' => "tests#index"
-  root 'users#index'
-
+  get 'organizations/earthjustice' => 'organizations#earth_justice'
+  get 'users/new' => 'users#new'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
