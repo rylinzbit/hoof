@@ -30,6 +30,8 @@ gem 'bcrypt', '~> 3.1.7'
 # Use Hirb for easy viewing database info
 gem 'hirb'
 
+gem 'materialize-sass'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 

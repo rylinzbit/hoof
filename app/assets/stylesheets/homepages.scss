@@ -1,3 +1,91 @@
 // Place all the styles related to the Homepages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.container {
+}
+.base {
+}
+/*-------------- tab buttons---------------- */
+.week-btn {
+	background-color: #e6af4b;	
+}
+.metric-btn {
+	background-color: #e6af4b;
+}
+.past-btn {
+	background-color: #e6af4b;
+}
+.stat-btn {
+	background-color: #e6af4b;
+}
+.homebody {
+	background-image: url('http://i.huffpost.com/gen/1797617/images/o-OUTDOOR-FITNESS-facebook.jpg');
+	height: 1000px;
+	margin: 0 0 0 0;
+	padding: 30px 0 0 0;
+	overflow: scroll;
+}
+.week {
+	padding: 20px 0 20px 20px;
+	margin: 0px 0 20px 30px;
+	background-color: white;
+	opacity: .85;
+	border-radius: 8px;
+	width: 600px;
+}
+.content {
+}
+h3 	{
+	padding: 30px 0 0 0;
+}
+.header {
+	margin: 20px 0 -25px 0;
+}
+button {
+	margin: 20px 0 0 0;
+}
+.past {
+	margin: 0 0 0 400px;
+}
+.stats {
+	margin: 0 0 0 800px;
+}
+.metrics {
+	margin: 0 0 0 1200px;
+}
+p {
+	font-size: 17px;
+}
+.email_submit {
+	width: 600px;
+	background-color: white;
+	opacity: .85;
+	padding: 20px;
+	margin: 0 0 0 1200px;
+}
+.logout {
+	color: black;
+	margin: 0 0 0 300px;
+}
+.nav-btn {
+	margin: 20px 0 0 0;
+}
+.nav_box {
+	background-color: black;
+	opacity: .85;
+	border-radius: 8px;
+	width: 1150px;
+	height: 300px;
+	margin: 0 0 0 395px;
+	padding: 0 0 0 25px;
+}
+img {
+	width: 275px;
+	height: 175px;
+}
+span {
+	color: white;
+	text-align: center;
+	margin: 0 0 0 0px;
+}
