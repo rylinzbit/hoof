@@ -10,7 +10,11 @@ Rails.application.routes.draw do
   get 'organizations/earthjustice' => 'organizations#earth_justice'
   get 'users/new' => 'users#new'
   post 'users' => 'users#create'
-
+  get 'nutrition' => 'nutrition#index'
+  get 'nutrition/vegan' => 'nutrition#vegan'
+  get 'nutrition/gluten-free-dairy-free' => 'nutrition#gfdf'
+  get 'nutrition/vegetarian' => 'nutrition#vegetarian'
+  get 'nutrition/paleo' => 'nutrition#paleo'
 
   resources :subscribers
 
