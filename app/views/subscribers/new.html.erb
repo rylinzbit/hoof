@@ -1,18 +1,38 @@
-<%= form_tag subscribers_path do %>
-  <article>
-    <% if flash[:error].present? %>
-      <div id="error_explanation">
-        <p><%= flash[:error] %></p>
+<div class="container">
+  <%= form_tag subscribers_path do %>
+    <article>
+      <div class="row">
+        <% if flash[:error].present? %>
+          <div class="col s12" id="error_explanation">
+            <p><%= flash[:error] %></p>
+          </div>
+        <% end %>
       </div>
-    <% end %>
-    <label class="amount">
-      <span>Amount: $590.00</span>
-    </label>
-  </article>
 
-  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-          data-description="A month's subscription"
-          data-amount="59000"
-          data-locale="auto"></script>
-<% end %>
+      <div class="row">
+        <div class="col s12 m7">
+          <div class="card">
+            <div class="card-image">
+              <img src="/assets/payment-001.jpg">
+              <span class="card-title">Hoof Hearted Welcomes You!!!</span>
+            </div>
+            <div class="card-content">
+              <p>To complete your registration and start your plan just make your payment of only $90. That gives you three months of unlimited access to personalized workouts and nutrition giudelines. We require a refundable* $500 deposit that will keep you motivated to stay on the program.</p>
+              <br/>
+              <p>Balance Due: $590.00 (*incl. $500 refunded only upon completion!)</p>
+            </div>
+            <div class="card-action">
+              <div class="row">
+                <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                        data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+                        data-description="A month's subscription"
+                        data-amount="59000"
+                        data-locale="auto"></script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  <% end %>
+</div>
