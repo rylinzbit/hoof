@@ -1,0 +1,26 @@
+<div id="base2" class="base">
+	<div id="gfdf_base">
+		<div class="container">
+			<div class="row">
+				<img src="/assets/gfdf_option" id="banner" class="responsive-img left z-depth-1">
+				<h1 class="col l8 z-depth-3">Living<span id="title">Gluten & Dairy Free</span></h1>
+				<div id="gfdf_back" class="bottom_half col l12">
+					<% @gfdf.each do |g| %>
+						<div class="row">
+							<div id="gfdf_post" class="post col l8 offset-l2">
+								<h4><%= g.title %></h4>
+								<p class="col l10 offset-l2 author"><%= g.author %></p>
+								<p class="col l11 offset-l1 flow-text content"><%= g.content %></p>
+								<% if g.video_name.length > 2 %>
+									<div class="col l10 offset-l2">
+										<iframe width="640" height="360" src="https://www.youtube.com/embed/ue2pCW4nNDU?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>	
+									</div>
+								<% end %>
+							</div>
+						</div>
+					<% end %>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

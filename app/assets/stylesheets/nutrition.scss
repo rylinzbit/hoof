@@ -1,0 +1,226 @@
+// Place all the styles related to the Nutrition controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+*{
+	margin: 0px;
+}
+#base1{
+	padding: 20px 0px;
+	background-color: #CCC5B9;
+
+	img{
+		padding: 0px;
+		width: 100%;
+		max-height: 425px;
+	}
+	h1{
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-size: 160px;
+		letter-spacing: 5px;
+		color: white;
+		position: absolute;
+		margin: -560px 343px;
+	}
+	.view {
+	    /*width: 300px;*/
+	    /*height: 200px;*/
+	    /*margin: 10px;*/
+	    /*float: left;*/
+	    /*border: 10px solid #fff;*/
+	    overflow: hidden;
+	    position: relative;
+	    text-align: center;
+	    /*box-shadow: 1px 1px 2px #e6e6e6;*/
+	    cursor: default;
+	    /*background: #fff url(../images/bgimg.jpg) no-repeat center center*/
+	}
+	.view .mask, .view .content {
+	    /*width: 300px;*/
+	    /*height: 200px;*/
+	    position: absolute;
+	    overflow: hidden;
+	    top: 0;
+	    left: 0
+	}
+	.view img {
+	    display: block;
+	    /*position: relative*/
+	}
+	.view #gfdf{
+		letter-spacing: 4px;
+		font-size: 50px;
+	}
+	.view h1 {
+	    text-transform: uppercase;
+	    /*color: #fff;*/
+	    text-align: center;
+	    position: relative;
+	    font-size: 60px;
+	    letter-spacing: 15px;
+	    padding: 40px 0;
+	    background: rgba(0, 0, 0, 0.6);
+	    margin: 80px 0 40px 0
+	}
+	.view a.info {
+	    /*display: inline-block;*/
+	    /*text-decoration: none;*/
+	    /*padding: 7px 14px;*/
+	    background: rgba(230, 175, 75, 0.75);
+	    letter-spacing: 5px;
+	    color: #fff;
+	    text-transform: uppercase;
+	    /*box-shadow: 0 0 1px #000*/
+	}
+	.view a.info:hover {
+	    box-shadow: 0 0 5px #000
+	}
+	.view-sixth img { 
+		transition: all 0.4s ease-in-out 0.5s; 
+	}
+	.view-sixth h1{
+		opacity:0;
+	    /*border-bottom: 1px solid rgba(0, 0, 0, 0.3);*/
+	    /*background: transparent;*/
+	    margin: 90px 0 60px 0;
+	    transform: scale(10);
+	    transition: all 0.3s ease-in-out 0.1s;
+	}
+	.view-sixth a.info { 
+		opacity:0;
+	    transform: translateY(100px);
+		transition: all 0.3s ease-in-out 0.1s;
+	}
+	/*.view-sixth:hover .mask {  
+		opacity:1; 
+		transition-delay: 0s;
+	}*/
+	.view-sixth:hover img { 
+		transition-delay: 0s; 
+	}
+	.view-sixth:hover h1 { 
+		opacity: 1;
+	    transform: scale(1);
+		transition-delay: 0.1s;
+	}
+	.view-sixth:hover a.info { 
+		opacity:1;
+	    transform: translateY(0px);
+		transition-delay: 0.3s;
+	}	
+}
+/*- - - - - - - - - - - END OF NUTRITION PAGE STYLESHEET - BEGINNING OF VEGAN STYLESHEET - - - - - - - - - */
+
+#base2{
+	/*background-color: rgba(230, 175, 75, 0.74);*/
+	/*padding: 0 20px 20px;*/
+
+	#banner{
+		margin-left: 250px; 
+	}
+	h1{
+		font-family: 'Open Sans Condensed', sans-serif;
+		background-color: rgba(204, 197, 185, 0.50);
+		color: white;
+		font-size: 30px;
+		letter-spacing: 15px;
+		margin-left: -190px;
+		margin-top: -150px;
+		padding-bottom: 10px;
+		border-bottom: solid #604923 2px;
+		span{
+			font-size: 120px;
+			letter-spacing: 3px;
+			
+		}
+		#veggie_title{
+			letter-spacing: 1px;
+			font-size: 90px;
+		}
+	}
+	#vegan_back{
+		background-image: url("wood_background.jpg");
+	}
+	#paleo_back{
+		background-image: url("paleo_wall3.jpg");
+	}
+	#veggie_back{
+		background-image: url("veggie_back.gif");
+	}
+	#gfdf_back{
+		background-image: url("gfdf_background3.jpg");
+		margin-top: 40px;
+	}
+	.bottom_half{
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 140%;
+		margin-top: 20px;
+		margin-left: -250px;
+		padding: 30px;
+	}
+	.post{
+		margin-top: 20px;
+		height: 450px;
+		overflow: scroll;
+		background-color: rgba(251, 242, 227, 0.7);
+		border: solid white 7px;
+		padding: 10px 25px 30px;
+		color: #2B2721;
+		h4{
+			margin-bottom: 4px;
+			font-size: 40px;
+			letter-spacing: 5px; 
+		}
+		.author{
+			border-bottom: solid white 2px;
+			font-style: italic;
+		}
+		.content{
+			font-size: 17px;
+			margin-top: 15px;
+		}
+	}
+	#paleo_post{
+		background-color: rgba(232, 220, 201, 0.82);
+	}
+
+}
+#vegan_base{
+	background-color: rgba(230, 175, 75, 0.74);
+	padding: 0 25px 20px;
+}
+#paleo_base{
+	background-color: rgba(75, 70, 62, 0.42);
+	padding: 0 25px 20px;
+}
+#veggie_base{
+	background-color: rgba(15, 82, 87, 0.80);
+	padding: 0 25px 20px;
+}
+#gfdf_base{
+	background-color: rgba(230, 175, 75, 0.54);
+	padding: 0 25px 20px;
+	#banner{
+		width: 90%;
+		max-height: 300px;
+		margin-left: 388px;
+	}
+	h1{
+		margin-top: -120px;
+		padding: 0 20px 15px;
+		font-size: 30px;
+		span{
+			letter-spacing: 0px;
+			font-size: 90px;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+

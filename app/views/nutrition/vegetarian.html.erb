@@ -1,0 +1,21 @@
+<div id="base2" class="base">
+	<div id="veggie_base">
+		<div class="container">
+			<div class="row">
+				<img src="/assets/veggie_banner" id="banner" class="responsive-img left z-depth-1">
+				<h1 class="col l4 z-depth-3">Living<span id="veggie_title">Vegetarian</span></h1>
+				<div id="veggie_back" class="bottom_half col l12">
+					<% @vegetarian.each do |ve| %>
+						<div class="row">
+							<div class="post col l8 offset-l2">
+								<h4><%= ve.title %></h4>
+								<p class="col l10 offset-l2 author"><%= ve.author %></p>
+								<p class="col l11 offset-l1 flow-text content"><%= ve.content %></p>
+							</div>
+						</div>
+					<% end %>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -11,7 +11,11 @@ Rails.application.routes.draw do
   get 'users/new' => 'users#new'
   get 'users/test' => 'users#test'
   post 'users' => 'users#create'
-
+  get 'nutrition' => 'nutrition#index'
+  get 'nutrition/vegan' => 'nutrition#vegan'
+  get 'nutrition/gluten-free-dairy-free' => 'nutrition#gfdf'
+  get 'nutrition/vegetarian' => 'nutrition#vegetarian'
+  get 'nutrition/paleo' => 'nutrition#paleo'
 
   resources :subscribers
 
