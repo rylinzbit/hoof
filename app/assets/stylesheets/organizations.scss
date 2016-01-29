@@ -8,6 +8,9 @@
 	padding: 0px;
 	background-color: #0F5257;
 }
+#nav_btns{
+	position: absolute;
+}
 .container{
 	margin: 0px;
 	max-width: none;
@@ -67,4 +70,53 @@
 		margin: -15px 5px;
 	}
 }
+ /*- - - - - - - - - - - - - - SGT PEPPER CSS - - - - - - - - - -*/
+#sgtP{
+	#nav_btns{
+		position: absolute;
+	}
+	#logo{
+		position: absolute;
+		margin: 200px 300px;
+	}
+	.info{
+		position: absolute;
+		color: white;
+		font-family: 'Open Sans Condensed', sans-serif;
+		p{
+			margin: 70px 0;
+			font-size: 17px;
+			letter-spacing: 3px;
+			font-style: italic;
+			line-height: 40px;
+			span{
+				font-size: 27px;
+				letter-spacing: 2px;
+			}
+		}
+		#donate{
+			border:solid white 1px;
+			padding: 25px 40px;
+			margin-top: 40px;
+			h5{
+				letter-spacing: 3px;
+				word-spacing: 5px;
+				line-height: 35px;
+				font-size: 20px;
+				font-style: italic;
+			}
+		}
+
+	}
+	#video_div{
+		margin-top: -120px;
+		width: 100.5%;
+		opacity: 0.55;
+	}
+}
+
+
+
+
+
 

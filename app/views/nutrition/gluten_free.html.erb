@@ -2,8 +2,13 @@
 	<div id="gfdf_base">
 		<div class="container">
 			<div class="row">
+				<div id="nav_btns" class="col l4">
+					<a href="/nutrition" class="waves-effect waves-light btn">Nutrition Home</a>
+					<a href="/homepages/<%= session[:user_id] %>" class="waves-effect waves-light btn">Home Page</a>
+					<a href="/sessions/destroy" class="waves-effect waves-light btn">Log Out</a>
+				</div>
 				<img src="/assets/gfdf_option" id="banner" class="responsive-img left z-depth-1">
-				<h1 class="col l8 z-depth-3">Living<span id="title">Gluten & Dairy Free</span></h1>
+				<h1 class="col l9 z-depth-3">Living<span id="title">Gluten & Dairy Free</span></h1>
 				<div id="gfdf_back" class="bottom_half col l12">
 					<% @gfdf.each do |g| %>
 						<div class="row">

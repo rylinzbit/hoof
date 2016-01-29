@@ -2,6 +2,11 @@
 	<div id="paleo_base">
 		<div class="container">
 			<div class="row">
+				<div id="nav_btns" class="col l4">
+					<a href="/nutrition" class="waves-effect waves-light btn">Nutrition Home</a>
+					<a href="/homepages/<%= session[:user_id] %>" class="waves-effect waves-light btn">Home Page</a>
+					<a href="/sessions/destroy" class="waves-effect waves-light btn">Log Out</a>
+				</div>
 				<img src="/assets/paleo_banner" id="banner" class="responsive-img left z-depth-1">
 				<h1 class="col l4 z-depth-3">Living<span id="title">Paleo</span></h1>
 				<div id="paleo_back" class="bottom_half col l12">

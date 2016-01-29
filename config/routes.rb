@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   # get 'homepages/index' => 'homepages#index'
   get 'homepages/:id' => 'homepages#index'
   get 'organizations/earthjustice' => 'organizations#earth_justice'
+  get 'organizations/sgtpeppersfriends' => 'organizations#sgt_peppers_friends'
   get 'users/new' => 'users#new'
   post 'users' => 'users#create'
   get 'nutrition' => 'nutrition#index'
