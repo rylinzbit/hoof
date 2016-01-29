@@ -1,12 +1,14 @@
 Rails.application.routes.draw do
 
   get 'sessions/new'
-  get 'sessions/destroy' => 'sessions#destroy'
   post 'sessions/create' => 'sessions#create'
+  get 'sessions/destroy' => 'sessions#destroy'
 
   # devise_for :users controllers: { registration: "registrations" }
 
   root 'landing#index'
+  get 'landing/index' => "landing#index"
+
   # get 'homepages/index' => 'homepages#index'
 
   get 'homepages/:id' => 'homepages#index'
