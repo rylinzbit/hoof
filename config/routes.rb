@@ -10,7 +10,8 @@ Rails.application.routes.draw do
   get 'landing/index' => "landing#index"
 
   # get 'homepages/index' => 'homepages#index'
-
+  #about page route
+  get 'about' => 'landing#about'
   get 'homepages/:id' => 'homepages#index'
   get 'organizations/earthjustice' => 'organizations#earth_justice'
   get 'users/new' => 'users#new'

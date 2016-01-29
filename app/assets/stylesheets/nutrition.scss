@@ -8,6 +8,16 @@
 	padding: 20px 0px;
 	background-color: #CCC5B9;
 
+	.nav_btns{
+		margin-left: -255px;
+		margin-top: 10px;
+		position: absolute;
+		opacity: 0.85;
+	}
+	#bottom_nav_btn{
+		margin-top: 55px;
+	}
+
 	img{
 		padding: 0px;
 		width: 100%;
@@ -114,6 +124,22 @@
 	/*background-color: rgba(230, 175, 75, 0.74);*/
 	/*padding: 0 20px 20px;*/
 
+	#nav_btns{
+		margin-left: -270px;
+		margin-top: 10px;
+		position: absolute;
+		opacity: 0.85;
+	}
+	#nav_partial{
+		position: absolute;
+		background-color: black;
+		opacity: .85;
+		border-radius: 8px;
+		width: 1150px;
+		height: 300px;
+		margin: 0 0 0 395px;
+		padding: 0 0 0 25px;
+	}
 	#banner{
 		margin-left: 250px; 
 	}
@@ -188,6 +214,9 @@
 #vegan_base{
 	background-color: rgba(230, 175, 75, 0.74);
 	padding: 0 25px 20px;
+	h1{
+		margin-top: -110px;
+	}
 }
 #paleo_base{
 	background-color: rgba(75, 70, 62, 0.42);
@@ -196,6 +225,9 @@
 #veggie_base{
 	background-color: rgba(15, 82, 87, 0.80);
 	padding: 0 25px 20px;
+	h1{
+		margin-top: -110px;
+	}
 }
 #gfdf_base{
 	background-color: rgba(230, 175, 75, 0.54);
@@ -206,12 +238,12 @@
 		margin-left: 388px;
 	}
 	h1{
-		margin-top: -120px;
+		margin-top: -140px;
 		padding: 0 20px 15px;
 		font-size: 30px;
 		span{
 			letter-spacing: 0px;
-			font-size: 90px;
+			font-size: 100px;
 		}
 	}
 }
@@ -224,3 +256,4 @@
 
 
 
+	

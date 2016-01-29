@@ -1,6 +1,12 @@
 <div id="base1" class="base">
 	<div class="container">
 		<div class="row">
+				<div class="nav_btns col l4">
+					<a href="/homepages/<%= session[:user_id] %>" class="waves-effect waves-light btn">Home Page</a>
+				</div>
+				<div id="bottom_nav_btn" class="nav_btns col l4">
+					<a href="/sessions/destroy" class="waves-effect waves-light btn">Log Out</a>
+				</div>
 			<div class="col l6">
 				<div class="view view-sixth">
 					<img src="/assets/nutrition_page1.jpg" class="responsive-img z-depth-2">
