@@ -32,7 +32,7 @@
 </script>
 <div ng-app="myApp" class="base">
 			<div class="row">
-					<h5 class="col m3 header">Welcome "Person's Name!"</h5>
+					<h5 class="col m3 header">Welcome <%= @user[:f_name].capitalize %> <%= @user[:l_name].capitalize %></h5>
 					<a href="#/" ><button class="btn week-btn">This Week</button></a>
 					<a href="#/past" ><button class="btn past-btn">Past Workouts</button></a>
 					<a href="#/stats" ><button class="btn stat-btn">Your Stats</button></a>
@@ -41,7 +41,7 @@
 						<a href="#/navbar">
 							<i class="small btn mdi-navigation-menu nav-btn"></i>
 						</a>
-					<a href="/logoff" class="logout">LOG OUT</a>
+					<a href="/sessions/destroy" class="logout">LOG OUT</a>
 			</div>
 	<div class="homebody">
 		<div ng-view></div>

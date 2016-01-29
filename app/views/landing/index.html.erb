@@ -20,16 +20,16 @@
 					<img class="responsive-img" src="http://static1.squarespace.com/static/53a828b7e4b01786c9227adf/t/54384a7ce4b0692d36860f9d/1412975228817/" />
 					<div class="mask"></div>
 					<div class="content col l12">
-						<form action="#">
+						<form action="/sessions/create" method="post">
+							<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
 							<h2>Log In Here</h2>
 								<div class="input-field">
-
-									<p id="email_input"><input type="text" class="browser-default" placeholder="Email"></p>
+									<p id="email"><input type="text" name="email" class="browser-default" placeholder="Email"></p>
 								</div>
 								<div class="input-field">
-									<p id="password_input"><input type="password" placeholder="Password"></p>
+									<p id="password"><input type="password" name="password" placeholder="Password"></p>
 								</div>
-						<a type="submit" class="info">Read More</a>
+							<input type="submit" class="info" value="Log In">
 						</form>
 					</div>
 				</div>
