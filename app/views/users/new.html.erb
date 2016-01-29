@@ -1,27 +1,63 @@
-<h1>In the registration area</h1>
+<div class="base">
+	<div class="container valign-wrapper">
 
-<form action="/users/payment" method="post">
-	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+		<div class="row">
+      <h4 class="col s4 offset-s4">Registration</h4>
+      <form class="col s4 offset-s4" action="/users" method="post">
+        <div class="section">
+          <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
 
-	<p>First Name</p>
-	<input type="text" name="user[f_name]" id="First Name">
-	<p>Last Name</p>
-	<input type="text" name="user[l_name]" id="Last Name">
-	<p>Email</p>
-	<input type="text" name="user[email]" id="Email">
-	<p>Password</p>
-	<input type="password" name="user[password]" id="Password">
-	<p>Password Confirmation</p>
-	<input type="password" name="user[password_confirmation]" id="Password Confirmation">
-	<p>Birthday</p>
-	<input type="date" name="user[birthday]" id="Birthday">
-	<p>Fitness Goals</p>
-	<input type="text" name="user[fitness_goals]" id="Fitness Goals">
-	<p>Lifestyle</p>
-	<input type="text" name="user[lifestyle]" id="Lifestyle">
-	<p>Organization</p>
-	<input type="text" name="user[organization]" id="Organization">
+          <label for="f_name">First Name</label>
+          <input type="text" name="user[f_name]" id="f_name">
 
+          <label for="l_name">Last Name</label>
+          <input type="text" name="user[l_name]" id="last_name">
 
-	<p><button type="submit" id="Join">Join and Make Payment</button></p>
-</form>
+          <label for="email">Email</label>
+          <input type="text" name="user[email]" id="email">
+
+          <label for="password">Password</label>
+          <input type="password" name="user[password]" id="password">
+
+          <label for="password_confirmation">Password Confirmation</label>
+          <input type="password" name="user[password_confirmation]" id="password_confirmation">
+
+          <label for="birthday">Birthday</label>
+          <input type="date" name="user[birthday]" id="birthday">
+
+        </div>
+        <div class="row">
+          <label>Fitness Goals</label>
+          <select class="browser-default col s12" id="fitness_goals" name="user[fitness_goals]">
+            <option value="" disabled selected>Choose your option</option>
+            <option value="Option 1">Option 1</option>
+            <option value="Option 2">Option 2</option>
+            <option value="Option 3">Option 3</option>
+            </select>
+          </div>
+
+          <div class="row">
+          <label>Life Style</label>
+          <select class="browser-default col s12" id="lifestyle" name="user[lifestyle]">
+            <option value="" disabled selected>Choose your option</option>
+            <option value="Option 1">Option 1</option>
+            <option value="Option 2">Option 2</option>
+            <option value="Option 3">Option 3</option>
+          </select>
+          </div>
+
+          <div class="row">
+          <label>Organization Beneficiary</label>
+          <select class="browser-default col s12" id="organization" name="user[organization]">
+            <option value="" disabled selected>Choose your option</option>
+            <option value="Option 1">Option 1</option>
+            <option value="Option 2">Option 2</option>
+            <option value="Option 3">Option 3</option>
+          </select>
+        </div>
+
+        <button type="submit">Register</button>
+      </form>
+		</div>
+	</div>
+</div>

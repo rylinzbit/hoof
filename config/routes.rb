@@ -1,8 +1,17 @@
 Rails.application.routes.draw do
+
+  # devise_for :users controllers: { registration: "registrations" }
+
   root 'landing#index'
-  get 'homepages/index' => 'homepages#index'
+  # get 'homepages/index' => 'homepages#index'
+  get 'homepages/:id' => 'homepages#index'
   get 'organizations/earthjustice' => 'organizations#earth_justice'
   get 'users/new' => 'users#new'
+  post 'users' => 'users#create'
+
+
+  resources :subscribers
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

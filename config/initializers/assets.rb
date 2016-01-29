@@ -12,6 +12,6 @@ Rails.application.config.assets.version = '1.0'
 
 # Rails.application.config.assets.precompile += %w( users.js )
 # Rails.application.config.assets.precompile += %w( users.scss )
-%w( homepages landing organizations).each do |controller|
+%w( homepages landing organizations users subscribers).each do |controller|
   Rails.application.config.assets.precompile += ["#{controller}.scss", "#{controller}.css", "#{controller}.js"]
 end
