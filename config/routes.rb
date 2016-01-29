@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'sessions/new'
+
   # devise_for :users controllers: { registration: "registrations" }
 
   root 'landing#index'

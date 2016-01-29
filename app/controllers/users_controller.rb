@@ -12,6 +12,7 @@ class UsersController < ApplicationController
   	@user.avail_video = 3
 
   	if @user.save
+      session[:user_id] = @user.id
   		flash[:success] = "Welcome, you have just taken the first steps to improving yourself!!!"
   		redirect_to "/subscribers/new"
   	else
