@@ -8,18 +8,31 @@
           </div>
         <% end %>
       </div>
+
       <div class="row">
-        <div class="valign">
-            <h5>Balance Due: $590.00 (incl. $500 refunded upon completion!)</h5>
+        <div class="col s12 m7">
+          <div class="card">
+            <div class="card-image">
+              <img src="/assets/payment-001.jpg">
+              <span class="card-title">Hoof Hearted Welcomes You!!!</span>
+            </div>
+            <div class="card-content">
+              <p>To complete your registration and start your plan just make your payment of only $90. That gives you three months of unlimited access to personalized workouts and nutrition giudelines. We require a refundable* $500 deposit that will keep you motivated to stay on the program.</p>
+              <br/>
+              <p>Balance Due: $590.00 (*incl. $500 refunded only upon completion!)</p>
+            </div>
+            <div class="card-action">
+              <div class="row">
+                <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                        data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+                        data-description="A month's subscription"
+                        data-amount="59000"
+                        data-locale="auto"></script>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </article>
-    <div class="row">
-      <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-              data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-              data-description="A month's subscription"
-              data-amount="59000"
-              data-locale="auto"></script>
-    </div>
   <% end %>
 </div>

@@ -28,35 +28,47 @@
         </div>
         <div class="row">
           <label>Fitness Goals</label>
-          <select class="browser-default col s12" id="fitness_goals" name="user[fitness_goals]">
-            <option value="" disabled selected>Choose your option</option>
-            <option value="Option 1">Option 1</option>
-            <option value="Option 2">Option 2</option>
-            <option value="Option 3">Option 3</option>
+          <div class="input-field col s12">
+            <select  id="fitness_goals" name="user[fitness_goals]" multiple>
+              <option value="" disabled selected>Choose many options</option>
+              <option value="Be more active"               >Be more active</option>
+              <option value="Eat more fruit and vegetables">Eat more fruit and vegetables</option>
+              <option value="Try a new form of exercise"   >Try a new form of exercise</option>
+              <option value="Perfect your portion control" >Perfect your portion control</option>
+              <option value="Improve diet"                 >Improve diet</option>
+              <option value="Tone up"                      >Tone up</option>
+              <option value="Get stronger"                 >Get stronger</option>
             </select>
           </div>
 
           <div class="row">
           <label>Life Style</label>
-          <select class="browser-default col s12" id="lifestyle" name="user[lifestyle]">
-            <option value="" disabled selected>Choose your option</option>
-            <option value="Option 1">Option 1</option>
-            <option value="Option 2">Option 2</option>
-            <option value="Option 3">Option 3</option>
-          </select>
+          <div class="input-field col s12">
+            <select id="lifestyle" name="user[lifestyle]">
+              <option value="" disabled selected>Choose your option</option>
+              <option value="sedentary"  >Sedentary</option>
+              <option value="moderate"   >Moderate</option>
+              <option value="active"     >Active</option>
+              <option value="athletic"   >Athletic</option>
+              <option value="restrictive">Restrictive</option>
+            </select>
           </div>
 
           <div class="row">
           <label>Organization Beneficiary</label>
-          <select class="browser-default col s12" id="organization" name="user[organization]">
-            <option value="" disabled selected>Choose your option</option>
-            <option value="Option 1">Option 1</option>
-            <option value="Option 2">Option 2</option>
-            <option value="Option 3">Option 3</option>
+          <div class="input-field col s12">
+            <select id="organization" name="user[organization]">
+              <option value="" disabled selected>Choose your option</option>
+              <option value="Earthjustice">Earthjustice</option>
+              <option value="Sgt. Pepper's Friends">Sgt. Pepper's Friends</option>
+              <option value="Stand Up for Kids">Stand Up for Kids</option>
+              <option value="Fourth World Love">Fourth World Love</option>
           </select>
         </div>
 
-        <button type="submit">Register</button>
+        <div class="row">
+          <button type="submit">Register</button>
+        </div>
       </form>
 		</div>
 	</div>

@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get 'homepages/:id' => 'homepages#index'
   get 'organizations/earthjustice' => 'organizations#earth_justice'
   get 'users/new' => 'users#new'
+  get 'users/test' => 'users#test'
   post 'users' => 'users#create'
 
 

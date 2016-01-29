@@ -5,6 +5,9 @@ class UsersController < ApplicationController
   def new
   end
 
+  def test
+  end
+  
   def create
   	@user = User.new(user_params)
   	@user.week = 1
