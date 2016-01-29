@@ -1,2 +1,54 @@
-<h1>Homepages#index</h1>
-<p>Find me in app/views/homepages/index.html.erb</p>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.min.js"></script>
+<script>
+
+	var myApp = angular.module('myApp', ['ngRoute']);
+
+	myApp.config(function ($routeProvider){
+    	$routeProvider
+			.when('/', {
+				templateUrl: '/partials/thisWeek.html'
+			})
+			.when('/past', {
+				templateUrl: '/partials/past.html'
+			})
+			.when('/stats', {
+				templateUrl: '/partials/stats.html'
+			})
+			.when('/metrics', {
+				templateUrl: '/partials/bodyMetrics.html'
+			})
+			.when('/submit', {
+				templateUrl: '/partials/submit.html'
+			})
+			.when('/navbar', {
+				templateUrl: '/partials/navbar.html'
+			})
+			.otherwise({
+				redirectTo: '/'
+			});
+	});
+
+</script>
+<div ng-app="myApp" class="base">
+			<div class="row">
+					<h5 class="col m3 header">Welcome "Person's Name!"</h5>
+					<a href="#/" ><button class="btn week-btn">This Week</button></a>
+					<a href="#/past" ><button class="btn past-btn">Past Workouts</button></a>
+					<a href="#/stats" ><button class="btn stat-btn">Your Stats</button></a>
+					<a href="#/metrics" ><button class="btn metric-btn">Body Metrics</button></a>
+					<a href="#/submit" ><button class="btn submit-btn">Submit Your Video</button></a>
+						<a href="#/navbar">
+							<i class="small btn mdi-navigation-menu nav-btn"></i>
+						</a>
+					<a href="/logoff" class="logout">LOG OUT</a>
+			</div>
+	<div class="homebody">
+		<div ng-view></div>
+	</div>
+</div>
+
+
+
+
+

@@ -32,6 +32,12 @@ ActiveRecord::Schema.define(version: 20160128212415) do
 
   add_index "posts", ["nutrition_id"], name: "index_posts_on_nutrition_id"
 
+  create_table "videos", force: :cascade do |t|
+    t.string   "title"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string   "f_name"
     t.string   "l_name"
@@ -49,5 +55,4 @@ ActiveRecord::Schema.define(version: 20160128212415) do
     t.boolean  "subscribed"
     t.string   "stripe_id"
   end
-
 end
