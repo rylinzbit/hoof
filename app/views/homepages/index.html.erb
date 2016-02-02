@@ -32,7 +32,7 @@
 </script>
 <div ng-app="myApp" class="base">
 			<div class="row">
-					<h5 class="col m3 header">Welcome <%= @user[:f_name].capitalize %> <%= @user[:l_name].capitalize %></h5>
+					<h5 class="col m3 header">Welcome <%= @user.f_name %> <%= @user.l_name %></h5>
 					<a href="#/" ><button class="btn week-btn">This Week</button></a>
 					<a href="#/past" ><button class="btn past-btn">Past Workouts</button></a>
 					<a href="#/stats" ><button class="btn stat-btn">Your Stats</button></a>
