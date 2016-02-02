@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   get 'about' => 'landing#about'
   get 'homepages/:id' => 'homepages#index'
   get 'organizations/earthjustice' => 'organizations#earth_justice'
+  get 'organizations/sgtpeppersfriends' => 'organizations#sgt_peppers_friends'
   get 'users/new' => 'users#new'
   get 'users/test' => 'users#test'
   post 'users' => 'users#create'
